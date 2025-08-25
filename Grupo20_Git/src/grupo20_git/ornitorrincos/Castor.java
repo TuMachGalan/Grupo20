@@ -1,3 +1,5 @@
+package grupo20_git.ornitorrincos;
+
 import java.util.Scanner;
 import java.util.Random;
 
