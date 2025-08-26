@@ -3,28 +3,25 @@ package grupo20_git.ornitorrincos;
 import java.util.Scanner;
 import java.util.Random;
 
+/**
+ *
+ * @author Federico Galan
+ */
 public class Castor {
     
-    private double longitudCola; 
-    private double velocidad;   
+    protected double longitudCola; 
+    protected double velocidad;   
 
 
     public Castor() {
     }
 
-    // Constructor con parámetros
+    // SuperClaseCastorciño
     public Castor(double longitudCola, double velocidad) {
         this.longitudCola = longitudCola;
         this.velocidad = velocidad;
     }
 
-    public void cargarDatos() {
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Ingrese longitud de la cola (cm): ");
-        this.longitudCola = sc.nextDouble();
-        System.out.print("Ingrese velocidad de nado (km/h): ");
-        this.velocidad = sc.nextDouble();
-    }
 
     public void nadar() {
         System.out.println("El castor nada a una velocidad de " + velocidad + " km/h.");

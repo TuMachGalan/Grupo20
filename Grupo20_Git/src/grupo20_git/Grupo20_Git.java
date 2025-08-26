@@ -3,6 +3,8 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
 package grupo20_git;
+import grupo20_git.ornitorrincos.IniciarOrnis;
+import java.util.Scanner;
 
 /**
  *
@@ -14,7 +16,9 @@ public class Grupo20_Git {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        
+        IniciarOrnis.main(args);
+        
     }
     
 }
