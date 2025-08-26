@@ -6,7 +6,7 @@ package grupo20_git.ornitorrincos;
 
 /**
  *
- * @author TuMachGalan
+ * @author TuMachaGalana
  */
 public class NewClass {
     
