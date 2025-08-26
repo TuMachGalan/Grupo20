@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package grupo20_git.ornitorrincos;
 
 
@@ -48,7 +44,7 @@ public class IniciarOrnis {
             
             try {
                 hermanosOrni[0] = blue;
-                hermanosOrni[1] = orniVerde; // OrniVerde en posición 1
+                hermanosOrni[1] = orniVerde; // ORNIVERDE EN POSICION 1 
                 hermanosOrni[2] = blui;
                 
                 System.out.println("\n=== HABILIDADES DE LOS ORNITORRINCOS ===");
@@ -107,7 +103,7 @@ public class IniciarOrnis {
         }
     }
     
-    // Método auxiliar para obtener el nombre del ornitorrinco
+    //METODO AUXILIAR PARA OBTENER EL NOMBRE DEL ORNITORRINCO
     private static String getNombreOrni(Castor orni) {
         if (orni instanceof OrniVerde) {
             return ((OrniVerde) orni).getNombre();
