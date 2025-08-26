@@ -5,7 +5,7 @@ import java.util.Random;
 
 /**
  *
- * @author Federico Galan, Heber Gomez
+ * @author Federico Galan, Heber Gomez, Tomas Abatedaga
  */
 public class Castor {
 

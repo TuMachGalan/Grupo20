@@ -16,22 +16,26 @@ public class IniciarOrnis {
     public static void main (String[] args) {
         Scanner scanner = new Scanner(System.in);
         try {
+            
             // 1. Crear instancias de los ornitorrincos
             System.out.println("=== CREACION DE ORNITORRINCOS ===");
             // Datos para OrniVerde (con tu nombre)
             System.out.println("\nCreando OrniVerde):");
             OrniVerde orniVerde = new OrniVerde("Locaso", 25.0, 8.0, 6.8, 7.5);
+            
             // Datos para OrniAzul Blue
             System.out.println("\nCreando OrniAzul Blue:");
             System.out.print("Ingrese propulsion para Blue (5-10 km/s): ");
             double propulsionBlue = scanner.nextDouble();
             OrniAzul blue = new OrniAzul("Blue", propulsionBlue, 25.0, 8.0);
+            
             //(String nombre,double propulsion, double longitudCola, double velocidad) 
             // Datos para OrniAzul Blui
             System.out.println("\nCreando OrniAzul Blui:");
             System.out.print("Ingrese propulsion para Blui (5-10 km/s): ");
             double propulsionBlui = scanner.nextDouble();
             OrniAzul blui = new OrniAzul("Blui", propulsionBlui, 25.0, 8.0);
+            
             // 2. Arreglo de tamaño 3
             Castor[] hermanosOrni = new Castor[3];
             try {
@@ -43,8 +47,10 @@ public class IniciarOrnis {
                 for (int i = 0; i < hermanosOrni.length; i ++) {
                     System.out.println("\n--- " + getNombreOrni(hermanosOrni[i])
                         + " ---");
+                    
                     // Habilidad de nado
                     hermanosOrni[i].nadar();
+                    
                     // Habilidades musicales
                     if (hermanosOrni[i] instanceof OrniVerde) {
                         OrniVerde ov = (OrniVerde) hermanosOrni[i];
@@ -62,6 +68,7 @@ public class IniciarOrnis {
                 System.out.println(
                     "\nlos ornitohermanos estan juntos al fin.....");
             }
+            
             // 3. Pasar a List los 2 mejores nadadores (solo OrniAzul)
             List<OrniAzul> mejoresNadadores = new ArrayList<>();
             for (Castor orni : hermanosOrni) {
@@ -69,6 +76,7 @@ public class IniciarOrnis {
                     mejoresNadadores.add((OrniAzul) orni);
                 }
             }
+            
             // 4. Ordenar por propulsión de forma ascendente
             Collections.sort(mejoresNadadores, new Comparator<OrniAzul>() {
                 @Override
