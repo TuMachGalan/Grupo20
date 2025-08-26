@@ -16,7 +16,7 @@ public class Grupo20_Git {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        
+        //llamamos a la clase que inicia el programa en la carpeta ornitorrincos
         IniciarOrnis.main(args);
         
     }
