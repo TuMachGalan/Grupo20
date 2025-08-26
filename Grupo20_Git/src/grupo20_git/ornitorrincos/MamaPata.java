@@ -6,8 +6,9 @@ package grupo20_git.ornitorrincos;
 
 /**
  *
- * @author TuMachGalan
+ * @author TuMachGalan, Heber Gomez
  */
 public interface MamaPata {
-    void tocarOrgano();
+
+    void tocarOrgano ();
 }
