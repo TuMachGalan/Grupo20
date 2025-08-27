@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package grupo20_git.ornitorrincos;
 
 import java.util.Scanner;
@@ -10,36 +6,42 @@ import java.util.Scanner;
  *
  * @author Federico Galan, Heber Gomez
  */
+// Clase OrniVerde - Representa un ornitorrinco verde con habilidades musicales
 public class OrniVerde extends Castor implements MamaPata {
 
+    // Atributos principales del OrniVerde
     private String nombre;
     private double picoLongitud;
     private double patasLongitud;
 
-    public OrniVerde (String nombre, double picoLongitud, double patasLongitud, double longitudCola, double velocidad) {
+    // Constructor de la clase
+    public OrniVerde(String nombre, double picoLongitud, double patasLongitud, 
+                     double longitudCola, double velocidad) {
         super(longitudCola, velocidad);
         this.nombre = nombre;
         this.picoLongitud = picoLongitud;
         this.patasLongitud = patasLongitud;
     }
 
-    public String getNombre () {
+    // Getter para obtener el nombre del OrniVerde
+    public String getNombre() {
         return nombre;
     }
 
     @Override
-    public void tocarOrgano () {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println(
-            "Presiona la tecla Enter/Intro para tocar el organo.......");
+    public void tocarOrgano() {
+        final Scanner scanner = new Scanner(System.in);
+        System.out.println("Presiona Enter para tocar el órgano...");
         scanner.nextLine();
-        System.out.println("Do-Re-Mi-Fa-Sol-La-Le-Li-Lo-Lu");
+        System.out.println("♪ Do-Re-Mi-Fa-Sol-La-Le-Li-Lo-Lu ♪");
     }
 
-    public void tocarGuitorgan () {
-        System.out.println(nombre + " Tocando el Guitargan");
+    // Método que combina tocar guitarra y órgano
+    public void tocarGuitorgan() {
+        System.out.println(nombre + " está tocando el Guitorgan...");
         tocarGuitarra();
         tocarOrgano();
-        System.out.println("Tocada Finalizada digo, Cuac cuaac....!");
+        System.out.println("¡Tocada finalizada, cuac cuac!");
     }
 }
+
